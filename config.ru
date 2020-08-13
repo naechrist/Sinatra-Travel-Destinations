@@ -5,4 +5,6 @@ if ActiveRecord::Migrator.needs_migration?
 end
 
 run Rack::MethodOverride #allows us to use 'patch' and 'delete' requests
+use TravelDestinationsController #mounting the other controller classes 
+use UsersController
 run ApplicationController
