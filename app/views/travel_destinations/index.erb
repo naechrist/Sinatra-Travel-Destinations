@@ -1,0 +1,6 @@
+<h1> Travel Destinations! </h1>
+    <% @travel_destinations.each do |td| %>
+        <h4><a href="/travel_destinations/<%= td.id %>"><%= td.title %></a></h4>
+        <p><%=td.content%></p>
+
+    <% end %>
