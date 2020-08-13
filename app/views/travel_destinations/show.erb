@@ -1,0 +1,13 @@
+<h2><%= @travel_destination.title %></h2>
+<h3><%= @travel_destination.content %></h3>
+<% if authorized_to_edit?(@travel_destination) %> 
+<br>
+    <a href="/travel_destinations/<%=@travel_destination.id%>/edit">Edit </a>
+    <br><br>
+    
+    <form action="/travel_destinations/<%=@travel_destination.id%>" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="Delete this Destination">
+    </form>
+
+<% end %>
