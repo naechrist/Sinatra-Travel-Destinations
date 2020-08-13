@@ -1,0 +1,12 @@
+<h1>Edit Destination</h1>
+
+<form method="post" action="/travel_destinations/<%=@travel_destination.id%>"> 
+    <input type="hidden" name="_method" value="PATCH">  
+    <label for="title">Where to?</label>
+    <input type="text" name="title" value="<%=@travel_destination.title%>">
+    <br>
+    <label for="content">Anyplace specific or anything you'd like to see?</label>
+    <input type="text" name="content" value="<%=@travel_destination.content%>">    
+    <br><br>
+    <input type="submit" value="Add to the list!">
+</form>
