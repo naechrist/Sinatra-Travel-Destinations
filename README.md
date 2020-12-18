@@ -1,5 +1,7 @@
 A simple app that tracks where you want to go in the world! This app allows users to log in, sign up, and create new destinations. Users can also edit and delete their own destinations. 
 
+Once cloned, bundle install, rake db:migrate, then rackup to get on localhost.
+
 LICENCE 
 Copyright <2020> <naechrist>
 
