@@ -20,7 +20,7 @@ class TravelDestinationsController < ApplicationController
         end 
         if params[:title] != "" #only save if it is filled out
             flash[:message] = "Let's get to packing!!"
-            @travel_destination = TravelDestination.create(title: params[:title], content: params[:content], user_id: current_user.id) #create new 
+            @travel_destination = TravelDestination.create(title: params[:title], city: params[:city], content: params[:content], user_id: current_user.id) #create new 
             redirect "/travel_destinations"
         else 
             flash[:error] = "Please try again."

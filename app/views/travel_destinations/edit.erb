@@ -2,11 +2,15 @@
 
 <form method="post" action="/travel_destinations/<%=@travel_destination.id%>"> 
     <input type="hidden" name="_method" value="PATCH">  
-    <label for="title">Where to?</label>
+    <label for="title">[State]</label><br>
     <input type="text" name="title" value="<%=@travel_destination.title%>">
-    <br>
-    <label for="content">Anyplace specific or anything you'd like to see?</label>
+    <br><br>
+    <label for="city">[City]</label><br>
+    <input type="text" name="city" value="<%=@travel_destination.city%>">
+    <label for="content">Anyplace specific or anything you'd like to see?</label><br><br>
     <input type="text" name="content" value="<%=@travel_destination.content%>">    
+    <label for="moreContent">More on it?</label> 
+    <input type="textarea" name="moreContent">
     <br><br>
     <input type="submit" value="Add to the list!">
 </form>
